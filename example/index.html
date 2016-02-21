@@ -32,7 +32,7 @@ function animate (render, duration, easing) {
     }
     else {
       requestAnimationFrame(loop);
-      render(easing(p));
+      render(easing.get(p));
     }
   }());
 }
